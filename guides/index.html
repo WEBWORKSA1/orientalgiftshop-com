@@ -1,0 +1,9 @@
+---
+layout: default
+title: "Gift Guides & Etiquette"
+description: "Guides to Asian gift giving: Lunar New Year, Diwali, Japanese and Korean etiquette, red envelopes, weddings, corporate gifts, tea and more."
+section: null
+article: false
+---
+<section class="page-hero"><div class="wrap"><p class="eyebrow">Guides</p><h1>Gift guides &amp; etiquette</h1><p class="lede">Clear, researched guides to giving well across Asian cultures: festivals, weddings, business, wrapping and the taboos that trip people up.</p></div></section>
+<section class="wrap section"><div class="chips" data-filter-group="guides"><button type="button" class="chip" aria-pressed="true" data-filter="all">All</button><button type="button" class="chip" aria-pressed="false" data-filter="Business">Business</button><button type="button" class="chip" aria-pressed="false" data-filter="Craft">Craft</button><button type="button" class="chip" aria-pressed="false" data-filter="Etiquette">Etiquette</button><button type="button" class="chip" aria-pressed="false" data-filter="Festivals">Festivals</button><button type="button" class="chip" aria-pressed="false" data-filter="Gift ideas">Gift ideas</button><button type="button" class="chip" aria-pressed="false" data-filter="Occasions">Occasions</button></div><div class="grid cards-3" id="guideGrid">{% for g in site.data.guides %}<article class="card guide-card" data-cat="{{ g.category }}"><a href="guides/{{ g.slug }}.html"><div class="card-art art-{{ g.art }}" aria-hidden="true"><span>{{ g.glyph }}</span></div><div class="card-body"><p class="eyebrow">{{ g.category }}</p><h3>{{ g.short }}</h3><p>{{ g.description }}</p></div></a></article>{% endfor %}</div></section>
