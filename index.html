@@ -1,0 +1,137 @@
+---
+layout: default
+title: "OrientalGiftShop.com"
+description: "Find the right gift for Lunar New Year, Diwali, weddings and Japanese, Chinese, Korean and Indian occasions. Free Gift Finder, Taboo Checker, festival calendar and etiquette guides."
+keywords: "asian gifts, oriental gifts, lunar new year gifts, gift etiquette, gift finder"
+tools: true
+---
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">The Asian gift guide · Free tools</p>
+      <h1>Give a gift that <em>means</em> something, in every culture.</h1>
+      <p class="lede">Lunar New Year, Diwali, Chuseok, a Japanese client, a Korean wedding, your in-laws' first visit. Find the right gift, skip the taboos, and present it the way it is meant to be given.</p>
+      <div class="hero-ctas"><a class="btn btn-gold" href="gift-finder.html">Find a gift in 60 seconds</a><a class="btn btn-ghost" style="color:#fff" href="taboo-checker.html">Is my gift a taboo?</a></div>
+      <div class="hero-stats"><div><strong>60+</strong>curated gift ideas</div><div><strong>6</strong>cultures covered</div><div><strong>46</strong>symbols decoded</div><div><strong>17</strong>festivals tracked</div></div>
+    </div>
+    <div class="hero-card">
+      <h2>Quick match</h2>
+      <form action="gift-finder.html" method="get">
+        <label for="qCul">Recipient's culture</label>
+        <select id="qCul" name="culture"><option value="cn">Chinese</option><option value="jp">Japanese</option><option value="kr">Korean</option><option value="in">Indian</option><option value="vn">Vietnamese</option><option value="th">Thai</option></select>
+        <label for="qOcc">Occasion</label>
+        <select id="qOcc" name="occasion"><option value="lny">Lunar New Year</option><option value="wedding">Wedding</option><option value="birthday">Birthday</option><option value="business">Business / client</option><option value="housewarming">Housewarming</option><option value="diwali">Diwali</option><option value="midautumn">Mid-Autumn</option><option value="chuseok">Chuseok</option><option value="thanks">Thank you</option><option value="retirement">Retirement / milestone</option></select>
+        <label for="qWho">For</label>
+        <select id="qWho" name="who"><option value="parent">A parent or in-law</option><option value="elder">An elder</option><option value="partner">My partner</option><option value="friend">A friend</option><option value="colleague">A colleague</option><option value="boss">My boss</option><option value="client">A client</option><option value="host">A host</option><option value="couple">A couple</option><option value="child">A child</option></select>
+        <label for="qBud">Budget</label>
+        <select id="qBud" name="budget"><option value="1">Under $25</option><option value="2" selected>$25–75</option><option value="3">$75–200</option><option value="4">$200+</option></select>
+        <input type="hidden" name="vibe" value="">
+        <button class="btn btn-red btn-block" type="submit" style="margin-top:1rem">Show my matches</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="countdown" data-countdown>
+    <div><p class="eyebrow" style="margin:0">Next big gifting date</p><div class="cd-name">Lunar New Year</div><div class="small cd-date"></div></div>
+    <div class="cd-time"><span><b>–</b>days</span><span><b>–</b>hours</span><span><b>–</b>mins</span></div>
+    <a class="btn btn-red btn-sm" href="guides/lunar-new-year-gift-guide.html">What to give</a>
+  </div>
+</div>
+
+<section class="section wrap">
+  <h2 class="section-title">Free gifting tools</h2>
+  <p class="section-sub">Built for the moments when a guess could go wrong. No sign-up, works on your phone.</p>
+  <div class="grid cards-3">
+    <a class="tile" href="gift-finder.html"><div class="ic">🎁</div><h3>Gift Finder</h3><p>Five questions, six culturally matched ideas, plus what to avoid.</p></a>
+    <a class="tile" href="taboo-checker.html"><div class="ic">⚠️</div><h3>Gift Taboo Checker</h3><p>Type any gift and see if it is lucky, fine or a faux pas in six cultures.</p></a>
+    <a class="tile" href="lucky-amount.html"><div class="ic">🧧</div><h3>Lucky Amount Calculator</h3><p>Red envelopes, shagun, goshugi and Korean wedding money: the right number.</p></a>
+    <a class="tile" href="festivals.html"><div class="ic">📅</div><h3>Festival Gift Calendar</h3><p>Every major Asian gifting date with countdowns and calendar reminders.</p></a>
+    <a class="tile" href="zodiac.html"><div class="ic">🐐</div><h3>Zodiac Gift Matcher</h3><p>Find their Chinese zodiac sign (with the New Year cut-off) and gift ideas.</p></a>
+    <a class="tile" href="greetings.html"><div class="ic">✍️</div><h3>Greetings Phrasebook</h3><p>Copy-ready wishes in Chinese, Japanese, Korean, Hindi, Vietnamese and Thai.</p></a>
+  </div>
+</section>
+
+<section class="band section">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Coming up · Year of the Goat 2027</p>
+      <h2>Lunar New Year starts February 6, 2027</h2>
+      <p>It is the busiest gifting season in Asia, celebrated in China, Korea, Vietnam, Singapore, Malaysia and by diaspora families everywhere. Our guide covers what to bring when you visit, how much to put in red envelopes, client gifts that land well, and the five classic mistakes.</p>
+      <ul class="checks"><li>Red envelopes: amounts, new notes and who gives to whom</li><li>Visiting gifts: oranges, tea, sweets and what to bring in-laws</li><li>Business gifts that are generous without being awkward</li></ul>
+      <a class="btn btn-red" href="guides/lunar-new-year-gift-guide.html">Read the 2027 guide</a>
+    </div>
+    <div class="tool" data-gift-of-day><p class="muted">Loading today's gift idea…</p></div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <h2 class="section-title">Popular guides</h2>
+  <p class="section-sub">Researched, plain-English guides to giving well, written for people who want to get it right.</p>
+  <div class="grid cards-3">{% assign fg = site.data.guides | where: "featured", true %}{% for g in fg limit:6 %}<article class="card guide-card" data-cat="{{ g.category }}"><a href="guides/{{ g.slug }}.html"><div class="card-art art-{{ g.art }}" aria-hidden="true"><span>{{ g.glyph }}</span></div><div class="card-body"><p class="eyebrow">{{ g.category }}</p><h3>{{ g.short }}</h3><p>{{ g.description }}</p></div></a></article>{% endfor %}</div>
+  <p style="text-align:center;margin-top:2rem"><a class="btn btn-ghost" href="guides/">All guides</a></p>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-slot="home-mid" aria-label="Advertisement"></div></div>
+
+<section class="band-ink section">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow" style="color:var(--gold)">Gift Concierge for businesses &amp; events</p>
+      <h2>Sending 10, 100 or 1,000 gifts? We will curate them for you, free.</h2>
+      <p style="color:#d9d4e6">Client gifts for Lunar New Year, Diwali hampers for staff, return gifts for 300 wedding guests, onboarding gifts for a new Tokyo office. Tell us the brief and get a culturally checked shortlist with supplier quotes within 48 hours.</p>
+      <ul class="checks" style="color:#fff"><li>Every idea screened for cultural taboos</li><li>Options at three budget levels, with lead times</li><li>Branding, wrapping and delivery handled by vetted suppliers</li></ul>
+      <a class="btn btn-gold" href="concierge.html?src=home">Get my free proposal</a>
+    </div>
+    <div class="stat-row">
+      <div><strong>48h</strong><span>proposal turnaround</span></div>
+      <div><strong>3</strong><span>budget tiers per brief</span></div>
+      <div><strong>$0</strong><span>cost to request</span></div>
+      <div><strong>6</strong><span>cultures checked</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="split">
+    <div>
+      <h2>The five rules that work almost everywhere</h2>
+      <ol>
+        <li><strong>Give and receive with both hands.</strong> Standard courtesy in East and Southeast Asia.</li>
+        <li><strong>Skip the number four.</strong> It sounds like "death" in Chinese, Japanese and Korean.</li>
+        <li><strong>Wrap it, and not in plain white or black.</strong> Presentation is part of the gift.</li>
+        <li><strong>Edible beats clutter.</strong> Quality food, tea and fruit are welcome almost everywhere.</li>
+        <li><strong>Don't expect it opened in front of you.</strong> Many recipients open gifts later, in private.</li>
+      </ol>
+      <a href="symbolism.html">Explore the full symbolism dictionary →</a>
+    </div>
+    <div>
+      <h2>Watch &amp; learn</h2>
+      <div class="video"><button class="yt" data-id="nVsvwEDwWHo" aria-label="Play: how to wrap a box with furoshiki" style="background-image:url(https://i.ytimg.com/vi/nVsvwEDwWHo/hqdefault.jpg)"></button></div>
+      <p class="small" style="margin-top:.6rem">Furoshiki: the Japanese cloth wrap that replaces paper. <a href="videos.html">More videos in the Video Hall →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band section">
+  <div class="wrap">
+    <h2 class="section-title">Grow with us</h2>
+    <p class="section-sub">OrientalGiftShop.com is independent and reader-supported.</p>
+    <div class="grid cards-4">
+      <a class="tile" href="for-sellers.html"><div class="ic">🏮</div><h3>Shops &amp; artisans</h3><p>Get featured in our guides and receive bulk-order leads.</p></a>
+      <a class="tile" href="advertise.html"><div class="ic">📣</div><h3>Advertise</h3><p>Reach gift buyers in the weeks before every major festival.</p></a>
+      <a class="tile" href="contests.html"><div class="ic">🏆</div><h3>Contests</h3><p>Share your gift story and win. New contest every season.</p></a>
+      <a class="tile" href="support.html"><div class="ic">❤️</div><h3>Support us</h3><p>Help keep every tool free and every guide researched.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" style="max-width:860px">
+  <h2 class="section-title">Questions people ask</h2>
+  <details class="faq"><summary>Is OrientalGiftShop.com a store?</summary><p>No. We are an independent guide and toolset. We do not sell or ship products. Where we suggest where to look for an item, the links go to third-party marketplaces, and some may be affiliate links that support the site at no cost to you.</p></details>
+  <details class="faq"><summary>Why the name "Oriental"?</summary><p>"Oriental gift shop" is a long-standing term for shops selling Asian décor, tea and crafts, and it is how many people still search. We use it only for objects and shops, never to describe people, and our guides name each culture specifically.</p></details>
+  <details class="faq"><summary>What is the safest gift if I know nothing about the recipient?</summary><p>A good-quality edible gift, such as tea, premium fruit or a box of sweets, wrapped neatly in a colour other than plain white or black, in a quantity that is not four. It works across China, Japan, Korea, India and Southeast Asia.</p></details>
+  <details class="faq"><summary>How much should I put in a red envelope?</summary><p>It depends on your relationship and local norms. Use an even amount without the number 4 for Chinese recipients, new notes, and give with both hands. Our <a href="lucky-amount.html">Lucky Amount Calculator</a> suggests amounts for Chinese, Vietnamese, Korean, Japanese and Indian customs.</p></details>
+  <details class="faq"><summary>Can you source gifts for my company?</summary><p>Yes. Our free <a href="concierge.html">Gift Concierge</a> handles corporate, event and wedding orders of 10 or more gifts. You get a curated shortlist with supplier options and quotes within 48 hours.</p></details>
+</section>
