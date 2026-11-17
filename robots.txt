@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /src/
+Disallow: /automation/
+
+Sitemap: https://orientalgiftshop.com/sitemap.xml
