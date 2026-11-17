@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- assign _a = page.url | size -%}{%- assign _b = page.url | remove: "/" | size -%}{%- assign _dirs = _a | minus: _b | minus: 1 -%}
+{%- capture base -%}{%- for i in (1.._dirs) -%}../{%- endfor -%}{%- endcapture -%}
+{%- if base == "" -%}{%- assign base = "./" -%}{%- endif %}
+{% if page.base == "dynamic" %}<script>document.write('<base href="'+(location.hostname.slice(-9)==='github.io'?'/orientalgiftshop-com/':'/')+'">')</script>{% else %}<base href="{{ base }}">{% endif %}
+{%- assign ptitle = page.title | default: site.title -%}
+{%- if page.url == "/" -%}{%- assign full_title = site.title | append: " | " | append: site.tagline -%}{%- else -%}{%- assign full_title = ptitle | append: " | " | append: site.title -%}{%- endif -%}
+{%- assign pdesc = page.description | default: site.description -%}
+{%- assign purl = site.url | append: page.url -%}
+{%- assign ver = site.time | date: "%Y%m%d%H%M" %}
+<title>{{ full_title | escape }}</title>
+<meta name="description" content="{{ pdesc | escape }}">
+<link rel="canonical" href="{{ purl }}">
+{% if page.noindex %}<meta name="robots" content="noindex,follow">
+{% endif %}<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta name="theme-color" content="#1c1a2e">
+<meta property="og:type" content="{% if page.article %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="OrientalGiftShop.com">
+<meta property="og:title" content="{{ ptitle | escape }}">
+<meta property="og:description" content="{{ pdesc | escape }}">
+<meta property="og:url" content="{{ purl }}">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v={{ ver }}">
+{% unless page.ads == false %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+{% endunless %}<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"{{ site.url }}/#org","name":"OrientalGiftShop.com","url":"{{ site.url }}/","logo":"{{ site.url }}/assets/img/logo.svg"},{"@type":"WebSite","@id":"{{ site.url }}/#site","name":"OrientalGiftShop.com","url":"{{ site.url }}/","publisher":{"@id":"{{ site.url }}/#org"},"potentialAction":{"@type":"SearchAction","target":"{{ site.url }}/search.html?q={query}","query-input":"required name=query"}}{% if page.section %},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}/"},{"@type":"ListItem","position":2,"name":{{ page.section | jsonify }},"item":"{{ site.url }}/{{ page.section_url }}"},{"@type":"ListItem","position":3,"name":{{ ptitle | jsonify }},"item":"{{ purl }}"}]}{% endif %}{% if page.article %},{"@type":"Article","headline":{{ ptitle | jsonify }},"description":{{ pdesc | jsonify }},"url":"{{ purl }}","dateModified":"{{ page.updated | default: site.time | date: '%Y-%m-%d' }}","author":{"@type":"Organization","name":"OrientalGiftShop.com Editorial Team"},"publisher":{"@id":"{{ site.url }}/#org"}}{% endif %}]}</script>
+</head>
+<body class="{{ page.body_class }}">
+<a class="skip" href="#main">Skip to content</a>
+<a class="owner-bar" href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a>
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="logo" href="./" aria-label="OrientalGiftShop.com home"><img src="assets/img/logo.svg" alt="" width="40" height="40"><span>Oriental<b>Gift</b>Shop<small>.com</small></span></a>
+    <nav id="nav" aria-label="Main"><ul><li><a href="gift-finder.html">Gift Finder</a></li><li><a href="gift-ideas.html">Gift Ideas</a></li><li><a href="guides/">Guides</a></li><li><a href="festivals.html">Festivals</a></li><li class="has-sub"><button type="button" class="sub-toggle" aria-expanded="false">Tools<span aria-hidden="true">▾</span></button><ul class="sub"><li><a href="taboo-checker.html"><strong>Gift Taboo Checker</strong><span>Is this gift OK in Japan, China, Korea…?</span></a></li><li><a href="lucky-amount.html"><strong>Lucky Amount Calculator</strong><span>Red envelopes, shagun, wedding money</span></a></li><li><a href="zodiac.html"><strong>Zodiac Gift Matcher</strong><span>Gifts by Chinese zodiac sign</span></a></li><li><a href="symbolism.html"><strong>Symbolism Dictionary</strong><span>Colors, numbers, animals, flowers</span></a></li><li><a href="greetings.html"><strong>Greetings Phrasebook</strong><span>Say it right on the card</span></a></li></ul></li><li><a href="videos.html">Videos</a></li></ul></nav>
+    <div class="head-actions">
+      <a class="icon-btn" href="search.html" aria-label="Search"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+      <a class="btn btn-red btn-sm head-cta" href="concierge.html">Gift Concierge</a>
+      <button id="burger" class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="ribbon" id="ribbon" hidden></div>
+<main id="main" tabindex="-1">
+{% if page.section %}<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">›</span><a href="{{ page.section_url }}">{{ page.section }}</a><span aria-hidden="true">›</span><span aria-current="page">{{ page.crumb | default: ptitle }}</span></nav>{% endif %}
+{{ content }}
+</main>
+<div id="siteFoot"></div>
+<footer class="mini-foot"><div class="wrap"><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="disclaimer.html">Disclaimer</a> · <a href="legal.html">Trademark &amp; Copyright</a> · <a href="sitemap.xml">Sitemap</a> · © {{ site.time | date: "%Y" }} OrientalGiftShop.com</div></footer>
+<div class="sticky-lead" id="stickyLead" hidden><p><strong>Need 10+ gifts?</strong> Free curated proposal in 48 hours.</p><a class="btn btn-gold btn-sm" href="concierge.html?src=sticky">Get my proposal</a><button type="button" aria-label="Dismiss" data-dismiss-sticky>×</button></div>
+<script src="assets/js/config.js?v={{ ver }}" defer></script>
+<script src="assets/js/footer.js?v={{ ver }}" defer></script>
+<script src="assets/js/enhance.js?v={{ ver }}" defer></script>
+<script src="assets/js/site.js?v={{ ver }}" defer></script>
+{% if page.tools %}<script src="assets/js/tools.js?v={{ ver }}" defer></script>
+{% endif %}</body>
+</html>

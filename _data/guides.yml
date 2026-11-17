@@ -1,0 +1,84 @@
+- slug: chinese-gift-taboos
+  short: "Chinese gift taboos explained"
+  description: "Why clocks, pears, umbrellas, shoes, green hats and the number 4 are unlucky gifts in Chinese culture, with a safe alternative for each."
+  category: "Etiquette"
+  art: red
+  glyph: "忌"
+  featured: true
+- slug: corporate-gifting-asia
+  short: "Corporate gifting in Asia"
+  description: "How to plan client and employee gifts in China, Japan, Korea, India and Southeast Asia: timing, budgets, packaging, compliance and the mistakes that cost relationships."
+  category: "Business"
+  art: ink
+  glyph: "商"
+  featured: true
+- slug: diwali-gift-guide
+  short: "Diwali gift guide"
+  description: "Traditional and modern Diwali gift ideas, how much shagun to give, gifts for clients and staff, and what to avoid for Hindu, Jain and Sikh households."
+  category: "Festivals"
+  art: saffron
+  glyph: "दीप"
+  featured: true
+- slug: furoshiki-wrapping-guide
+  short: "Furoshiki wrapping guide"
+  description: "What furoshiki is, which cloth to buy, the one knot you need, three easy wraps for boxes, bottles and odd shapes, and when to use it."
+  category: "Craft"
+  art: plum
+  glyph: "包"
+  featured: false
+- slug: housewarming-gifts-asia
+  short: "Housewarming gifts"
+  description: "What to bring to a housewarming in Chinese, Japanese, Korean, Indian and Vietnamese homes, from lucky bamboo to toilet paper, and what to leave at the shop."
+  category: "Occasions"
+  art: jade
+  glyph: "家"
+  featured: false
+- slug: japanese-gift-etiquette
+  short: "Japanese gift etiquette"
+  description: "A clear guide to giving gifts in Japan: the main gift seasons, omiyage, what to avoid, noshi wrapping, numbers and how to give and receive politely."
+  category: "Etiquette"
+  art: ink
+  glyph: "礼"
+  featured: true
+- slug: korean-gift-guide
+  short: "Korean gift giving guide"
+  description: "What Koreans give at Chuseok and Seollal, how much wedding money to give, red-ink and shoe taboos, and how to present gifts politely in Korea."
+  category: "Etiquette"
+  art: jade
+  glyph: "정"
+  featured: true
+- slug: lunar-new-year-gift-guide
+  short: "Lunar New Year 2027 gift guide"
+  description: "What to give, what to avoid and how much to put in red envelopes for Lunar New Year on February 6, 2027, the Year of the Fire Goat."
+  category: "Festivals"
+  art: red
+  glyph: "春"
+  featured: true
+- slug: mid-autumn-mooncake-gift-guide
+  short: "Mid-Autumn & mooncake gifts"
+  description: "How to choose and give mooncakes for the Mid-Autumn Festival on September 15, 2027, plus tea pairings, lanterns for children and what to avoid."
+  category: "Festivals"
+  art: gold
+  glyph: "月"
+  featured: false
+- slug: red-envelope-guide
+  short: "Red envelopes & cash gifts"
+  description: "Everything about hongbao, lai see, lì xì, otoshidama, Korean wedding money and Indian shagun: lucky amounts, new notes, envelopes and etiquette."
+  category: "Etiquette"
+  art: red
+  glyph: "包"
+  featured: true
+- slug: tea-gift-guide
+  short: "Tea gift guide"
+  description: "A buyer's guide to giving tea: green, oolong, pu-erh, matcha, jasmine and Darjeeling, what each says as a gift, how to pick quality and pair it with teaware."
+  category: "Gift ideas"
+  art: jade
+  glyph: "茶"
+  featured: false
+- slug: wedding-gifts-across-asia
+  short: "Wedding gifts across Asia"
+  description: "What guests give at Chinese, Japanese, Korean, Indian, Vietnamese and Thai weddings, typical cash amounts, envelopes, and gifts couples love."
+  category: "Occasions"
+  art: gold
+  glyph: "囍"
+  featured: false

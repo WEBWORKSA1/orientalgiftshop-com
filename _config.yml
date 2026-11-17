@@ -1,0 +1,24 @@
+title: OrientalGiftShop.com
+tagline: "Meaningful Asian Gifts, Etiquette & Gift Finder"
+description: "Find the right gift for Lunar New Year, Diwali, weddings, Japanese, Chinese and Korean occasions. Free gift finder, taboo checker, festival calendar and expert guides."
+url: "https://orientalgiftshop.com"
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+defaults:
+  - scope:
+      path: "guides"
+    values:
+      layout: guide
+      article: true
+      section: Guides
+      section_url: guides/
+exclude:
+  - README.md
+  - RESEARCH.md
+  - PROMPTS.md
+  - automation
+  - Gemfile
+  - Gemfile.lock
