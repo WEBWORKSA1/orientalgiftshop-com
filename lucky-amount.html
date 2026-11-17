@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Lucky Amount Calculator for Red Envelopes, Shagun and Wedding Money"
+description: "Get culturally lucky cash-gift amounts for Chinese hongbao, Vietnamese lì xì, Korean wedding money, Japanese goshugi and Indian shagun, plus envelope and note etiquette."
+keywords: "red envelope amount, hongbao how much, shagun amount, goshugi amount, korean wedding money"
+section: "Tools"
+section_url: "lucky-amount.html"
+crumb: "Lucky Amount Calculator"
+tools: true
+---
+<section class="page-hero"><div class="wrap"><p class="eyebrow">Free tool</p><h1>Lucky Amount Calculator</h1><p class="lede">Enter roughly what you want to give. We suggest nearby amounts that follow the number customs of the recipient's culture.</p></div></section>
+<section class="section wrap" style="max-width:920px" data-tool="lucky">
+  <div class="tool">
+    <form id="laForm">
+      <div class="grid cards-4" style="align-items:end">
+        <div class="field"><label for="laCulture">Culture</label><select id="laCulture"><option value="cn">Chinese (hongbao / lai see)</option><option value="vn">Vietnamese (lì xì)</option><option value="kr">Korean (축의금)</option><option value="jp">Japanese (goshugi)</option><option value="in">Indian (shagun)</option></select></div>
+        <div class="field"><label for="laOccasion">Occasion</label><select id="laOccasion"><option value="newyear">New Year</option><option value="wedding">Wedding</option><option value="birthday">Birthday</option><option value="baby">New baby</option><option value="funeral">Funeral / condolence</option></select></div>
+        <div class="field"><label for="laAmount">About how much?</label><input id="laAmount" type="number" min="1" value="100" inputmode="numeric"></div>
+        <div class="field"><label for="laCurrency">Currency</label><select id="laCurrency"><option value="$">$ (USD, CAD, SGD…)</option><option value="¥">¥ (CNY / JPY)</option><option value="₩">₩ (KRW)</option><option value="₹">₹ (INR)</option><option value="₫">₫ (VND)</option><option value="HK$">HK$</option><option value="RM">RM</option><option value="€">€</option><option value="£">£</option></select></div>
+      </div>
+      <button class="btn btn-red" type="submit">Suggest lucky amounts</button>
+    </form>
+    <div id="laResult" class="result" aria-live="polite"></div>
+  </div>
+</section>
+<section class="wrap" style="max-width:860px;padding-bottom:3rem">
+  <h2>The number rules, in one table</h2>
+  <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Culture</th><th>Happy occasions</th><th>Avoid</th><th>Envelope</th></tr></thead><tbody>
+  <tr><td>Chinese</td><td>Even amounts; 6, 8, 9 are favourites (88, 168, 888)</td><td>Any 4; odd amounts for weddings</td><td>Red, new notes</td></tr>
+  <tr><td>Vietnamese</td><td>New notes; 8 and 9 are popular</td><td>4</td><td>Red or gold</td></tr>
+  <tr><td>Korean</td><td>Odd units: 30,000, 50,000, 70,000, 100,000 won</td><td>4</td><td>White, with a written greeting</td></tr>
+  <tr><td>Japanese</td><td>Odd leading digit: 10,000, 30,000, 50,000 yen</td><td>4 and 9; old notes</td><td>Shūgi-bukuro with mizuhiki cord</td></tr>
+  <tr><td>Indian</td><td>Round amount plus 1: 101, 501, 1,001</td><td>Plain round numbers</td><td>Decorated shagun envelope, often with a coin</td></tr>
+  </tbody></table></div>
+  <p>Amounts are shaped by relationship and local cost of living more than by rules. Close family gives more than colleagues; in many places guests aim to cover roughly the cost of their seat at a wedding banquet. Read the full <a href="guides/red-envelope-guide.html">red envelope and cash gift guide</a>.</p>
+</section>
